@@ -1,0 +1,50 @@
+$primary-color:#fff;
+$margin:10px;
+$padding:10px;
+h1{
+    text-align: center;
+    margin-top: $margin*4;
+}
+.box{
+    width: 400px;
+    height: 350px;
+    border: 1px solid blue;
+    float: left;
+    margin-left: $margin*4 - 5;
+}
+@mixin  border-radius($border) {
+    border-radius: $border;
+}
+@mixin pic($w, $h, $mt, $ml, $bdrw, $bdrstl, $bdrclr:orange) {
+    width: $w;
+    height: $h;
+    margin-top: $mt;
+    margin-left: $ml;
+    border-width: $bdrw;
+    border-style: $bdrstl;
+    border-color: $bdrclr;
+}
+.box1{
+    @extend .box;
+    @include border-radius(5px);
+    .circle{
+        @include border-radius(30%);
+        @include pic(100px,100px,$margin*12,$margin*14, 1px, solid, rgb(255, 0, 119));
+    }
+}
+.box2{
+    @extend .box;
+    @include border-radius(15px);
+    .circle{
+        @include pic(150px,150px,$margin*10,$margin*12, 1px, solid, rgb(14, 3, 112));
+        @include border-radius(40%);
+    }
+}
+.box3{
+    @extend .box;
+    @include border-radius(25px);
+    .circle{
+        @include pic(200px,200px,$margin*8,$margin*10, 1px, solid);
+        @include border-radius(50%);
+    }
+}

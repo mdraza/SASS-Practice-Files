@@ -1,0 +1,34 @@
+/*============================================
+            Service Section
+  ============================================*/          
+  h2{
+    color: $heading-txt-color;
+}
+.service-box{
+    border: 1px dashed green;
+    padding: $padding*2;
+    transition: 0.5s;
+}
+.box{
+    @include service-box;
+
+    h3{
+        color: $heading-txt-color;
+    }
+    p{
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 14px;
+        color: $txt-color;
+    }
+    button{
+        border: 1px dashed green;
+        color: $btn-color;
+
+        &:hover{
+            background: $btn-color;
+        }
+    }
+    &:hover{
+        background:rgb(179, 255, 179);
+    }
+}

@@ -1,0 +1,60 @@
+$txt-color:#333;
+$margin:10px;
+$padding:10px;
+.head-txt{
+    color: $txt-color;
+    text-align: center;
+}
+
+.txt{
+    text-align: center;
+    padding: $padding*2 - 5;
+    button{
+        background-image: linear-gradient(90deg, red, green, blue);
+        color:#fff;
+        border: none;
+        padding: $padding;
+        cursor: pointer;
+    }
+
+}
+.main-txt1{
+    @extend .txt;
+    h2{
+        color: red;
+    }
+}
+.main-txt2{
+    @extend .txt;
+    h2{
+        color: green;
+    }
+}
+.main-txt3{
+    @extend .txt;
+    h2{
+        color: blue;;
+    }
+}
+.box{
+    width: 350px;
+    height: 300px;
+    margin-top: $margin*4;
+    float: left;
+
+}
+.box1{
+    @extend .box;
+    border: 2px dotted red;
+    margin-left: $margin*10;
+}
+.box2{
+    @extend .box;
+    border: 2px dashed green;
+    margin-left: $margin*4;
+}
+.box3{
+    @extend .box;
+    border: 2px dashed blue;
+    margin-left: $margin*4;
+}

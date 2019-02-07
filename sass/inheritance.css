@@ -1,0 +1,53 @@
+.head-txt {
+  color: #333;
+  text-align: center;
+}
+
+.txt, .main-txt1, .main-txt2, .main-txt3 {
+  text-align: center;
+  padding: 15px;
+}
+
+.txt button, .main-txt1 button, .main-txt2 button, .main-txt3 button {
+  background-image: -webkit-gradient(linear, left top, right top, from(red), color-stop(green), to(blue));
+  background-image: linear-gradient(90deg, red, green, blue);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.main-txt1 h2 {
+  color: red;
+}
+
+.main-txt2 h2 {
+  color: green;
+}
+
+.main-txt3 h2 {
+  color: blue;
+}
+
+.box, .box1, .box2, .box3 {
+  width: 350px;
+  height: 300px;
+  margin-top: 40px;
+  float: left;
+}
+
+.box1 {
+  border: 2px dotted red;
+  margin-left: 100px;
+}
+
+.box2 {
+  border: 2px dashed green;
+  margin-left: 40px;
+}
+
+.box3 {
+  border: 2px dashed blue;
+  margin-left: 40px;
+}
+/*# sourceMappingURL=inheritance.css.map */

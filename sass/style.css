@@ -1,0 +1,15 @@
+.box {
+  text-align: center;
+  border: 1px solid blue;
+  padding: 20px;
+  background: #ededfa;
+}
+
+h2 {
+  color: blue;
+}
+
+.btn {
+  background: #ff00c8;
+}
+/*# sourceMappingURL=style.css.map */

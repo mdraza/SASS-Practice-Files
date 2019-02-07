@@ -1,0 +1,19 @@
+$txt-color:blue;
+$bg-color:rgb(237, 237, 250);
+$btn-bg-color:rgb(255, 0, 200);
+$padding:10px;
+.box{
+	text-align: center;
+	border: 1px solid blue;
+	padding: $padding*2;
+	background:$bg-color;
+}
+h2{
+	color: $txt-color;
+}
+.btn{
+	background:$btn-bg-color;
+}
+
+
+

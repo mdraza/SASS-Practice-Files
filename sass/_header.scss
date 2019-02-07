@@ -1,0 +1,48 @@
+$heading-txt-color:green;
+$padding:10px;
+$txt-color:#333;
+$btn-color:green;
+$white:#fff;
+
+html{
+    scroll-behavior: smooth;
+}
+/*============================================
+            Navbar Section
+  ============================================*/
+  .main{
+    background-color: #008000!important;
+    border-top: 1px dashed greenyellow;
+    border-bottom: 1px dashed greenyellow;
+  }
+  .navbar{
+      padding: $padding*0;
+  }
+.navbar-dark{
+    .navbar-nav{
+        .nav-link{
+            color:$white;
+        }
+    }
+}
+
+.navbar-dark{
+    .navbar-toggler{
+       border-color: rgba(255,255,255,0) !important; 
+    }
+}
+nav{
+    button{
+        &:active{
+            border: none;
+            outline: none;
+        }
+        &:focus{
+            border: none;
+            outline: none;
+        }
+    }
+}
+  .bg-dark {
+    background-color: #008000!important;
+}
